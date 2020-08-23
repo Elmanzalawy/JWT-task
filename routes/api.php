@@ -26,10 +26,11 @@ Route::group(['middleware' => ['jwt.verify']], function() {
         Route::get('user', 'UserController@getAuthenticatedUser');
 
         //product routes (work in progress)
-        Route::get('products/{id}', 'ProductController@show');
-        Route::get('products','ProductController@products');
-        Route::post('store','ProductController@store');
-        Route::delete('delete/{id}','ProductController@destroy');
+        // Route::get('products/{id}', 'ProductController@show');
+        // Route::get('products','ProductController@products');
+        // Route::post('store','ProductController@store');
+        // Route::delete('delete/{id}','ProductController@destroy');
+        Route::apiResource('product','ProductController');
 
         //logout
         Route::get('logout', 'UserController@logout');

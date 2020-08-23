@@ -4,3 +4,4 @@
 
 ## Features
 - Users can register, login, and logout
+- Users can add, view, edit, and remove products
